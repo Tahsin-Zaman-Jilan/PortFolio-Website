@@ -1,6 +1,8 @@
 import React from "react";
 import portfolio from "../assets/portfolio/portfolio.PNG";
 import HearHub from "../assets/portfolio/HearHub.PNG";
+import sentiment from "../assets/portfolio/sentiment.png";
+
 
 const Portfolio = () => {
   const portfolios = [
@@ -9,14 +11,22 @@ const Portfolio = () => {
       src: HearHub,
       link: "https://hear-hub-a-ecommerce-website.vercel.app/" ,
       code:"https://github.com/Tahsin-Zaman-Jilan/HearHub-A-Ecommerce-Website" ,
+      name: "HearbHub-A Ecommerce website", 
     },
     {
       id: 2,
       src: portfolio,
       link:"https://jilanportfolio.netlify.app/",
       code:"https://github.com/Tahsin-Zaman-Jilan/PortFolio-Website",
+      name: "Portfolio Website",
     },
-    
+    {
+      id: 3,
+      src: sentiment,
+      link:"",
+      code:"https://github.com/Tahsin-Zaman-Jilan/Sentiment-Analysis-",
+      name: "Sentiment Analysis",
+    },
   ];
 
   return (
@@ -33,8 +43,10 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src,link ,code}) => (
+          {portfolios.map(({ id, src,link ,code,name}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div >{name}</div>
+            
               <img
                 src={src}
                 alt=""

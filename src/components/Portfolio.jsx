@@ -2,7 +2,8 @@ import React from "react";
 import portfolio from "../assets/portfolio/portfolio.PNG";
 import HearHub from "../assets/portfolio/HearHub.PNG";
 import sentiment from "../assets/portfolio/sentiment.png";
-
+import abhohawa from "../assets/portfolio/Abhohawa.PNG"
+import cricket from "../assets/portfolio/cricket.PNG"
 
 const Portfolio = () => {
   const portfolios = [
@@ -15,18 +16,34 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      src: cricket,
+      link:"https://cricket-live-three.vercel.app/",
+      code:"https://github.com/Tahsin-Zaman-Jilan/CRICKET-LIVE",
+      name: "Live Cricket Score App",
+    },
+
+    {
+      id: 3,
       src: portfolio,
       link:"https://jilanportfolio.netlify.app/",
       code:"https://github.com/Tahsin-Zaman-Jilan/PortFolio-Website",
       name: "Portfolio Website",
     },
     {
-      id: 3,
+    id: 4,
+    src: abhohawa,
+    link:"https://abhohawa.vercel.app/",
+    code:"https://github.com/Tahsin-Zaman-Jilan/Abhohawa",
+    name: "Abhohawa: A weather app",
+  },
+    {
+      id: 5,
       src: sentiment,
       link:"",
       code:"https://github.com/Tahsin-Zaman-Jilan/Sentiment-Analysis-",
       name: "Sentiment Analysis",
     },
+
   ];
 
   return (
